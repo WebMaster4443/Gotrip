@@ -155,7 +155,7 @@ margin-bottom: 86px;
     position: absolute;
     left: 0;
     bottom: -6px;
-    width: 35px;    
+    width: 65%;    
     height: 5px;
     border-radius: 50px;
     background: #C4C4C4;
@@ -357,3 +357,132 @@ margin-bottom: 30px;
     justify-content: flex-end;
 }
 
+/*-----------CUSTOMERS-----------*/
+.customers{
+   padding: 100px 0 133px;
+}
+.customers__row{
+    display: flex;
+    gap:0 68px;
+}
+.customers__contennt{
+    max-width: 565px;
+}
+.customers__img{
+    max-width: 478px;
+    overflow: hidden;
+}
+.customers__img img{
+   border-radius: 60px;
+}
+
+.customers__title{
+    color: #0F1F1C;
+    font-family: Poppins;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+
+/*-----------REvIEW CLIENT-----------*/
+.review{
+    margin-bottom: 30px;
+}
+
+.review__client{
+    display: flex;
+    justify-content: flex-start;
+    gap: 0 33px;
+    align-items: center;
+    
+}
+
+.review__client__Name{
+    color: #0F1F1C;
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 11px;
+}
+
+.review__client__Country{
+    color: var(--secondary);
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.review__client__img{
+    width: 134px;
+    height: 134px;
+    overflow: hidden;
+    position: relative;
+    background: #FF7B4E;
+    border-radius: 50%;
+}
+
+.review__client__img img{
+    position: absolute;
+    top: -50px;
+    left:0;
+}
+
+.review__client__text p{
+    color: var(--secondary);
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    max-width: 490px;
+}
+
+
+
+
+
+
+
+
+
+
+/*RATING STARS*/
+.rating-area {
+	overflow: hidden;
+	width: 300px;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 60px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 45px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
