@@ -27,28 +27,28 @@ v css, dadim dlya SVG  background-size: 100%;
 
  /*-----------CSS Peremennie---------------------*/
 :root{
-    --container-width: 1270px;
-    --container-padding: 15px;
+    --wrapper-width: 1270px;
+    --wrapper-padding: 15px;
     --secondary: rgb(15, 31, 28, 0.5);
     --white:#fff;
 }
 
-/*-----------CONTAINER---------------------*/
+/*-----------CONTAINER THEMES---------------------*/
 
-.container{
-    max-width: var(--container-width);
+.wrapper{
+    max-width: var(--wrapper-width);
     margin: 0 auto;
-    padding: 0 var(--container-padding);
+    padding: 0 var(--wrapper-padding);
 }
 
 /*NE STANDARTINE CONTAINERI*/
-.container_right{
-    padding-left: calc( (100% - var(--container-width))/2 + var(--container-padding));
+.wrapper_right{
+    padding-left: calc( (100% - var(--wrapper-width))/2 + var(--wrapper-padding));
     
 }
 
-.container_left{
-    padding-right: calc( (100% - var(--container-width))/2 + var(--container-padding));
+.wrapper_left{
+    padding-right: calc( (100% - var(--wrapper-width))/2 + var(--wrapper-padding));
 }
 
     /*skrivaet elementi, Prigoditsy kogda budem po 4estyam verstat*/
@@ -102,6 +102,11 @@ margin-bottom: 86px;
     position: relative;
     z-index: 10;
 }
+
+.nav__footer{
+    gap: 0 66px;
+    margin-bottom: 75px;
+}
 /*------LOGO------*/
 
 .nav__Logo a{
@@ -111,9 +116,21 @@ margin-bottom: 86px;
     text-transform: uppercase;
 }
 
+.logo__footer a{
+    color: #FF7C4E;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 /*------LOGIN------*/
 .nav__Login .btn{
    margin-left: 24px;
+   cursor: pointer;
+}
+
+.nav__Login__footer .btnTop:hover{
+    color: #fff;
 }
 
 /*------Btn------*/
@@ -122,6 +139,7 @@ margin-bottom: 86px;
     padding: 13px 44px;
     border-radius: 100px;
     margin-left: 25px;
+    color: #fff;
     background: linear-gradient(172deg, #FF7B4E 0%, #FF584E 100%), #FFF;
 }
 .btnTop:active{    
@@ -162,6 +180,23 @@ margin-bottom: 86px;
     transition: all 0.2s ease-in-out;
 }
 
+.navList__link__footer a.active::after,.navList__link__footer a:hover::after{
+    content: '';
+    display: none;
+    position: none;
+}
+
+.navList__link__footer a{
+    color: var(--secondary);
+}
+
+.footer_link{
+    color: var(--secondary);
+}
+
+.footer_link:hover{
+    color: var(--secondary);
+}
 
 
 /*---------HEADER_CONTENT-------------*/
@@ -437,16 +472,8 @@ margin-bottom: 30px;
     max-width: 490px;
 }
 
+/*-----------RATING STARS-----------*/
 
-
-
-
-
-
-
-
-
-/*RATING STARS*/
 .rating-area {
 	overflow: hidden;
 	width: 300px;
@@ -486,3 +513,108 @@ margin-bottom: 30px;
 .rate-area > label:active {
 	position: relative;
 }
+
+
+/*-----------CALL TO ACTION-----------*/
+.cta{
+    padding: 100px 0 35px;
+}
+
+.cta__plate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    background-color: #fff;
+    border-radius: 60px;
+    min-height: 580px;
+    padding: 40px 15px;
+    position: relative;
+    margin-bottom: 133px;
+}
+
+.cta__title{
+    color: #0F1F1C;
+    font-family: Poppins;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+.cta__subtitle{
+    color: var(--secondary);
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.cta__plate::before,.cta__plate::after{
+   position: absolute;
+   content: '';
+   display: block;
+   width: 63px;
+   height: 83px;
+}
+
+.cta__plate::before{
+    left: 74px;
+    bottom: 47px;
+    background-image: url('./../images/cta/cta-el-01.svg');
+
+}
+
+.cta__plate::after{
+    top: 80px;
+    right: 83px;
+    background-image: url('./../images/cta/cta-el-02.svg');
+}
+
+/*-----------SUBSCRIBE-----------*/
+
+.subscribe{
+    padding: 35px 0 50px;
+}
+
+.subscribe__form{
+
+}
+.subscribe__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.subscribe__title{
+    max-width: 500px;
+    color: #0F1F1C;;
+    font-family: Poppins;
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.subscribe__form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:0 90px;
+    padding: 12px 15px 12px 46px;
+    border-radius: 35px;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #C4C4C4;
+}
+
+
+input[type="email"] {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  input[type="button"]{
+    cursor: pointer;
+  }
+
+
+
