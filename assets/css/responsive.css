@@ -1,0 +1,106 @@
+/*-----------RESPONSIVE MEDIA-----------*/
+
+/*Monitors*/
+@media (max-width:1270px){
+    .wrapper_right {
+        padding-left: 15px;
+    }
+}
+
+/*Laptops*/
+@media (max-width:1024px){
+    .header__title{
+        font-size: 35px;
+    }
+
+    .header__text{
+        font-size: 22px;
+    }
+
+    .header__Img img{
+        right: -160px;
+    }
+
+    .header__Img::after{
+        right: -44px;
+    }
+}
+
+/*Planshet*/
+@media (max-width:992px){
+    .navList{
+        display: none;
+    }
+
+    .nav__Login{
+        display: none;
+    }
+
+    .nav__toggle{
+        display: block;
+    }
+
+    .nav__mobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background: linear-gradient(239deg, #428E5F 0%, #112120 100%), #204434;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+
+    }
+    .nav__mobile .nav__Login{
+        display: block;
+    }
+
+    .nav__mobile .nav__Logo{
+        margin-bottom: 20px;
+
+    }
+    .nav__mobile .nav__toggle{
+        position: fixed;
+        top: 50px;
+        right: 50px;
+    }
+
+    .nav__mobile .navList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 35px;
+        font-size: 20px;
+        margin-bottom: 15px;
+
+    }
+
+    .navList__link a.active::after,.navList__link a:hover::after{
+        display: none;
+    }
+
+
+
+    
+
+    
+
+    
+
+}
+
+/*Phone*/
+@media (max-width:576px){
+
+}
+
+/*Phone*/
+@media (max-width:320px){
+
+}
+
+

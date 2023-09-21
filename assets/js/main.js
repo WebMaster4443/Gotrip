@@ -43,3 +43,19 @@ $('.slider__btn__prev').click(function() {
 $('.slider__btn__next').click(function() {
     owl.trigger('next.owl.carousel');
 });
+
+
+/* ТУТ СКРИПТЫ ДЛЯ НАШЕГО МОБИЛЬНЕГО МЕНЮ */
+
+const navBtn =  document.querySelector('.nav__toggle');
+const nav = document.querySelector('.nav');
+const menuIcon = document.querySelector('.menu-icon');
+
+
+navBtn.onclick = function(){
+    nav.classList.toggle('nav__mobile');
+    menuIcon.classList.toggle('menu-icon-active');
+    
+}
+
+
