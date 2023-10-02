@@ -33,6 +33,11 @@ v css, dadim dlya SVG  background-size: 100%;
     --white:#fff;
 }
 
+/*No scroll nav_mobile */
+.no-scroll{
+    overflow-y: hidden;
+}
+
 /*-----------CONTAINER THEMES---------------------*/
 
 .wrapper{
@@ -428,7 +433,7 @@ margin-bottom: 30px;
     height: 402px;
     object-fit: cover;
     border-radius: 35px;
-    transition: all 0.5s ease-in 0s;   
+    transition: all 0.7s ease-in 0s;   
 }
 
 .slider .center .slider__item{
@@ -466,6 +471,10 @@ margin-bottom: 30px;
     justify-content: flex-end;
 }
 
+.owl-dots{
+    display: none;
+}
+
 /*-----------CUSTOMERS-----------*/
 .customers{
    padding: 100px 0 133px;
@@ -494,7 +503,7 @@ margin-bottom: 30px;
 }
 
 
-/*-----------REvIEW CLIENT-----------*/
+/*-----------REVIEW CLIENT-----------*/
 .review{
     margin-bottom: 30px;
 }
